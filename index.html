@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --Darkcyan: hsl(185, 75%, 39%);
+      --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+      --Darkgrayishblue: hsl(227, 10%, 46%);
+      --Darkgray: hsl(0, 0%, 59%);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--Darkcyan);  
+    background-color: var(--Darkcyan);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    }
+
+    .card {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      font-family: "kumbh sans", sans-serif;
+      height: 50vh;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px black;
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .dp {
+      position: absolute;
+      border-radius: 50%;
+      border: 7px solid white;
+      outline: none;
+      left:100px;
+      top: 70px;
+    }
+    
+    .text{
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      padding: 20px;
+    }
+
+    .detail{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .stats{
+      border-top: 1px solid var(--Darkgray);
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .stats-text{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stats-text-header{
+      font-weight: 700;
+    }
+    .stats-text-subheader{
+      font-weight: 400;
+      text-transform: uppercase;
+      color: var(--Darkgray);
+      font-size: 10px;
+    }
+
+    .headerlineone{
+        font-weight: 700;
+    }
+    .sublineone{
+      font-weight: 400;
+      color: var(--Darkgray);
+    }
+
+   .linetwo{
+     color: var(--Darkgray);
+     font-weight: 400;
+   }
+   .topsvg{
+     position: absolute;
+     bottom: 30vh;
+     right: 50vw;
+   }
+
+   .bottomsvg{
+     position: absolute;
+     top: 45vh;
+     left: 50vw;
+   }
+
+
+  </style>
+</head>
+
+<body>
+  <img src="images/bg-pattern-top.svg" alt="top design" class="topsvg">
+  <img src="images/bg-pattern-bottom.svg" alt="bottom design" class="bottomsvg">
+  <div class="card">
+    <div class="design"><img src="images/bg-pattern-card.svg" alt="design"></div>
+    <img src="images/image-victor.jpg" alt="victor's image" class="dp">
+    <div class="text">
+      <div class="detail">
+        <span class="lineone">
+         <span class="headerlineone"> Victor Crest</span>
+           <span class="sublineone"> 26</span>
+        </span>
+        <span class="linetwo">
+          London
+        </span>
+      </div>
+      <div class="stats">
+        <span class="stats-text">
+          <span class="stats-text-header"> 80K</span>
+          <span class="stats-text-subheader">Followers</span>
+        </span>
+        <span class="stats-text">
+          <span class="stats-text-header"> 803K</span>
+          <span class="stats-text-subheader"> Likes</span>
+        </span>
+        <span class="stats-text">
+          <span class="stats-text-header"> 1.4K</span>
+            <span class="stats-text-subheader">Photos</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
